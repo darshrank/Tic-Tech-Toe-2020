@@ -1,0 +1,57 @@
+.home__image{
+  margin-top: 20px;
+  width:100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+}
+
+.home__about{
+  background-color: #c0c0c0;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  z-index: 1;
+  text-align: center;
+  height:300px;
+}
+
+.home__description{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+
+.home__about h1{
+  padding-top: 10px;
+}
+
+.home_hr{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+}
+
+.home_catImage{
+  width: 150px;
+}
+
+.home__row{
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.home__rowPart2{
+  margin-left: 40px;
+  margin-right: 100px;
+}
+
+.home__foodImage{
+  margin-right: 100px;
+  margin-left: 20px;
+}
+
+.home__trasportImage{
+  /* margin-left: 10px; */
+  /* margin-right: 30px; */
+}

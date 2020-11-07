@@ -1,0 +1,26 @@
+.footer{
+    background-color: #131921;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.contacts{
+  text-align: left;
+  padding-top: 20px;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+
+.logos{
+  height:50px;
+  color: white;
+  font-size: 25px;
+}
+
+.logo{
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+}
