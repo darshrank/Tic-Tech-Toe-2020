@@ -17,7 +17,6 @@ function App() {
             <Header />
             <Home />
             <Footer />
-            <h1>home page</h1>
           </Route>
         </ Switch>
       </div>
