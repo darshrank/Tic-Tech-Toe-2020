@@ -30,16 +30,22 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `user` (
 <<<<<<< HEAD
+<<<<<<< HEAD
   `roll_number` varchar(11) NOT NULL,
   `Username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `Contact` varchar(10) NOT NULL,
   `Address` varchar(255) NOT NULL
 =======
+=======
+>>>>>>> 677a7cfc5304d092272624ab688b2a74f37d1e80
   `Id` int(11) NOT NULL,
   `Username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL
+<<<<<<< HEAD
+>>>>>>> 677a7cfc5304d092272624ab688b2a74f37d1e80
+=======
 >>>>>>> 677a7cfc5304d092272624ab688b2a74f37d1e80
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -52,7 +58,11 @@ CREATE TABLE `user` (
 --
 ALTER TABLE `user`
 <<<<<<< HEAD
+<<<<<<< HEAD
   ADD PRIMARY KEY (`roll_number`);
+=======
+  ADD PRIMARY KEY (`Id`);
+>>>>>>> 677a7cfc5304d092272624ab688b2a74f37d1e80
 =======
   ADD PRIMARY KEY (`Id`);
 >>>>>>> 677a7cfc5304d092272624ab688b2a74f37d1e80
