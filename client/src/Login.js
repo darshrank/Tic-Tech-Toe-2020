@@ -22,7 +22,7 @@ function Login (){
           <button className="login__signInButton">Sign In</button>
         </form>
         <p>By signing in you agree to parent pay conditions of use and sale.</p>
-        <button className="login__registerButton">Create Your Account</button>
+        <button className="login__registerButton" onClick>Create Your Account</button>
       </div>
     </div>
   )
