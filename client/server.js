@@ -34,6 +34,10 @@ if (process.env.NODE_ENV !== 'production') {
   app.get('/', checkAuthenticated, (req, res) => {
     res.render('index.ejs', { name: req.user.name, roll: req.user.roll, contact: req.user.contact, email: req.user.email, address:req.user.address})
   })
+
+  app.get('/home', checkNotAuthenticated, (req, res) => {
+    res.sendFile(__dirname + '/home.html')
+  })
   
   app.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('login.ejs')
@@ -69,7 +73,7 @@ if (process.env.NODE_ENV !== 'production') {
   
   app.delete('/logout', (req, res) => {
     req.logOut()
-    res.redirect('/login')
+    res.redirect('/home')
   })
   
   function checkAuthenticated(req, res, next) {
@@ -77,12 +81,12 @@ if (process.env.NODE_ENV !== 'production') {
       return next()
     }
   
-    res.redirect('/login')
+    res.redirect('/home')
   }
   
   function checkNotAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
-      return res.redirect('/')
+      return res.redirect('/index')
     }
     next()
   }
